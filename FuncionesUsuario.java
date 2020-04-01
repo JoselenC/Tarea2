@@ -3,9 +3,9 @@ package usuario;
 
 public class FuncionesUsuario {
 
-    
+     Usuario u = new Usuario();
     public double Impuestos(){
-    Usuario u = new Usuario();
+   
     double impuestos=0;
     int edad= u.getEdad();
     if((edad>18 && edad<=30) || (edad>65)){
@@ -28,5 +28,9 @@ public class FuncionesUsuario {
     }
 return impuestos;
 }
+    
+   public void agregarSaldo(int saldo){
+        u.getSaldo()+=saldo;
+    }
     
 }
